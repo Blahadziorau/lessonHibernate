@@ -89,7 +89,7 @@ public class App29 extends Application {
         lastName.setCellValueFactory(new PropertyValueFactory<Employee, String>("lastName"));
         lastName.setCellFactory(TextFieldTableCell.forTableColumn());
 
-        table.getColumns().addAll(name, lastName);
+        table.getColumns().addAll(lastName, name);
 
         table.setItems(data);
 
